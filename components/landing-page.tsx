@@ -95,7 +95,14 @@ export function LandingPage({ onStart }: { onStart: () => void }) {
                 {item.q}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground font-sans leading-relaxed pb-5">
-                {item.a}
+                <p>{item.a}</p>
+                {"bullets" in item && item.bullets && (
+                  <ul className="mt-3 space-y-2 list-disc pl-5">
+                    {(item.bullets as string[]).map((bullet, j) => (
+                      <li key={j}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}

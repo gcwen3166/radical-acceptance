@@ -16,8 +16,14 @@ const translations = {
         a: "Radical Acceptance is a DBT (Dialectical Behavior Therapy) skill that involves fully accepting reality as it is, stopping the fighting of reality because it is not the way you want it and letting go of bitterness. It is used when you cannot keep painful events and emotions from coming your way. It does not mean approval - it means acknowledging what is true.",
       },
       {
-        q: "Why is acceptance so difficult?",
-        a: "Our minds are wired to resist pain. When reality doesn\u2019t match our expectations, we naturally fight it. This resistance, while understandable, often creates more suffering than the original pain.",
+        q: "What Has to be Accepted?",
+        a: "What has to be accepted?",
+        bullets: [
+          "Reality is as it is: facts about the past and present are facts, even if you don't like them.",
+          "Realistic limitations: There are limits on the future for everyone.",
+          "Everything has a cause: including events that cause you pain and suffering.",
+          "Meaning in pain: Life can be worth living even with painful events in it.",
+        ],
       },
       {
         q: "Does acceptance mean giving up?",
@@ -93,8 +99,14 @@ const translations = {
         a: "La Aceptaci\u00f3n Radical es una habilidad de la TDC que implica aceptar completamente la realidad tal como es, sin juicio ni lucha. No significa aprobaci\u00f3n, sino reconocer lo que es verdad.",
       },
       {
-        q: "\u00bfPor qu\u00e9 es tan dif\u00edcil la aceptaci\u00f3n?",
-        a: "Nuestras mentes est\u00e1n programadas para resistir el dolor. Esta resistencia, aunque comprensible, a menudo crea m\u00e1s sufrimiento que el dolor original.",
+        q: "\u00bfQu\u00e9 hay que aceptar?",
+        a: "\u00bfQu\u00e9 hay que aceptar?",
+        bullets: [
+          "La realidad es como es: los hechos sobre el pasado y el presente son hechos, aunque no te gusten.",
+          "Limitaciones realistas: Hay l\u00edmites en el futuro para todos.",
+          "Todo tiene una causa: incluyendo eventos que te causan dolor y sufrimiento.",
+          "Significado en el dolor: La vida puede valer la pena incluso con eventos dolorosos.",
+        ],
       },
       {
         q: "\u00bfAceptar significa rendirse?",
@@ -170,8 +182,14 @@ const translations = {
         a: "\u5f7b\u5e95\u63a5\u53d7\u662fDBT\uff08\u8fa9\u8bc1\u884c\u4e3a\u7597\u6cd5\uff09\u7684\u4e00\u9879\u6280\u80fd\uff0c\u5b83\u610f\u5473\u7740\u5b8c\u5168\u63a5\u53d7\u73b0\u5b9e\uff0c\u4e0d\u52a0\u5224\u65ad\uff0c\u4e0d\u62b5\u6297\u3002\u8fd9\u4e0d\u610f\u5473\u7740\u8d5e\u540c\u2014\u2014\u800c\u662f\u627f\u8ba4\u4ec0\u4e48\u662f\u771f\u5b9e\u7684\u3002",
       },
       {
-        q: "\u4e3a\u4ec0\u4e48\u63a5\u53d7\u5982\u6b64\u56f0\u96be\uff1f",
-        a: "\u6211\u4eec\u7684\u5927\u8111\u88ab\u8bbe\u8ba1\u4e3a\u62b5\u6297\u75db\u82e6\u3002\u8fd9\u79cd\u62b5\u6297\u867d\u7136\u53ef\u4ee5\u7406\u89e3\uff0c\u4f46\u5f80\u5f80\u4f1a\u4ea7\u751f\u6bd4\u539f\u59cb\u75db\u82e6\u66f4\u591a\u7684\u82e6\u96be\u3002",
+        q: "\u9700\u8981\u63a5\u53d7\u4ec0\u4e48\uff1f",
+        a: "\u9700\u8981\u63a5\u53d7\u4ec0\u4e48\uff1f",
+        bullets: [
+          "\u73b0\u5b9e\u5c31\u662f\u73b0\u5b9e\uff1a\u5173\u4e8e\u8fc7\u53bb\u548c\u73b0\u5728\u7684\u4e8b\u5b9e\u5c31\u662f\u4e8b\u5b9e\uff0c\u5373\u4f7f\u4f60\u4e0d\u559c\u6b22\u3002",
+          "\u73b0\u5b9e\u7684\u5c40\u9650\u6027\uff1a\u6bcf\u4e2a\u4eba\u7684\u672a\u6765\u90fd\u6709\u5c40\u9650\u6027\u3002",
+          "\u4e07\u4e8b\u7686\u6709\u56e0\uff1a\u5305\u62ec\u90a3\u4e9b\u7ed9\u4f60\u5e26\u6765\u75db\u82e6\u548c\u53d7\u82e6\u7684\u4e8b\u4ef6\u3002",
+          "\u75db\u82e6\u4e2d\u7684\u610f\u4e49\uff1a\u5373\u4f7f\u6709\u75db\u82e6\u7684\u4e8b\u4ef6\uff0c\u751f\u6d3b\u4ecd\u7136\u503c\u5f97\u3002",
+        ],
       },
       {
         q: "\u63a5\u53d7\u662f\u5426\u610f\u5473\u7740\u653e\u5f03\uff1f",
