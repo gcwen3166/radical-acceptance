@@ -13,7 +13,7 @@ const translations = {
     faq: [
       {
         q: "What is Radical Acceptance?",
-        a: "Radical Acceptance is a DBT (Dialectical Behavior Therapy) skill that involves fully accepting reality as it is, without judgment, fighting, or trying to change it. It does not mean approval\u2014it means acknowledging what is true.",
+        a: "Radical Acceptance is a DBT (Dialectical Behavior Therapy) skill that involves fully accepting reality as it is, stopping the fighting of reality because it is not the way you want it and letting go of bitterness. It is used when you cannot keep painful events and emotions from coming your way. It does not mean approval - it means acknowledging what is true.",
       },
       {
         q: "Why is acceptance so difficult?",
