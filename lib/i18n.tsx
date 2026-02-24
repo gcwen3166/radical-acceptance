@@ -26,8 +26,14 @@ const translations = {
         ],
       },
       {
-        q: "Does acceptance mean giving up?",
-        a: "Absolutely not. Acceptance is the prerequisite for meaningful change. You cannot change what you refuse to acknowledge. Acceptance is the foundation upon which action is built.",
+        q: "Why Accept Reality?",
+        a: "",
+        bullets: [
+          "Rejecting reality does not change reality. In fact, changing reality often requires first accepting it.",
+          "Rejecting reality turns pain into suffering.",
+          "Refusing to accept can keep you stuck in unhappiness, bitterness, or shame.",
+          "Acceptance may lead to sadness, but deep calmness usually follows.",
+        ],
       },
       {
         q: "How does this tool work?",
@@ -109,8 +115,14 @@ const translations = {
         ],
       },
       {
-        q: "\u00bfAceptar significa rendirse?",
-        a: "Absolutamente no. La aceptaci\u00f3n es el prerrequisito para un cambio significativo. No puedes cambiar lo que te niegas a reconocer.",
+        q: "\u00bfPor qu\u00e9 aceptar la realidad?",
+        a: "",
+        bullets: [
+          "Rechazar la realidad no cambia la realidad. De hecho, cambiar la realidad a menudo requiere primero aceptarla.",
+          "Rechazar la realidad convierte el dolor en sufrimiento.",
+          "Negarse a aceptar puede mantenerte atrapado en la infelicidad, la amargura o la verg\u00fcenza.",
+          "La aceptaci\u00f3n puede llevar a la tristeza, pero una calma profunda generalmente sigue.",
+        ],
       },
       {
         q: "\u00bfC\u00f3mo funciona esta herramienta?",
@@ -192,8 +204,14 @@ const translations = {
         ],
       },
       {
-        q: "\u63a5\u53d7\u662f\u5426\u610f\u5473\u7740\u653e\u5f03\uff1f",
-        a: "\u7edd\u5bf9\u4e0d\u662f\u3002\u63a5\u53d7\u662f\u6709\u610f\u4e49\u7684\u6539\u53d8\u7684\u524d\u63d0\u3002\u4f60\u65e0\u6cd5\u6539\u53d8\u4f60\u62d2\u7edd\u627f\u8ba4\u7684\u4e8b\u60c5\u3002",
+        q: "\u4e3a\u4ec0\u4e48\u8981\u63a5\u53d7\u73b0\u5b9e\uff1f",
+        a: "",
+        bullets: [
+          "\u62d2\u7edd\u73b0\u5b9e\u5e76\u4e0d\u80fd\u6539\u53d8\u73b0\u5b9e\u3002\u4e8b\u5b9e\u4e0a\uff0c\u6539\u53d8\u73b0\u5b9e\u5f80\u5f80\u9700\u8981\u5148\u63a5\u53d7\u5b83\u3002",
+          "\u62d2\u7edd\u73b0\u5b9e\u4f1a\u5c06\u75db\u82e6\u53d8\u6210\u53d7\u82e6\u3002",
+          "\u62d2\u7edd\u63a5\u53d7\u53ef\u80fd\u4f1a\u8ba9\u4f60\u9677\u5165\u4e0d\u5e78\u3001\u75db\u82e6\u6216\u7f9e\u803b\u4e4b\u4e2d\u3002",
+          "\u63a5\u53d7\u53ef\u80fd\u4f1a\u5e26\u6765\u60b2\u4f24\uff0c\u4f46\u6df1\u5c42\u7684\u5e73\u9759\u901a\u5e38\u4f1a\u968f\u4e4b\u800c\u6765\u3002",
+        ],
       },
       {
         q: "\u8fd9\u4e2a\u5de5\u5177\u5982\u4f55\u5de5\u4f5c\uff1f",
