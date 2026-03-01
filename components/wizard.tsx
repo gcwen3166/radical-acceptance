@@ -27,8 +27,7 @@ export function Wizard({ onExit }: { onExit: () => void }) {
     halfSmile: false,
     locationOfNo: false,
     breath: false,
-    synthesisPart1: "",
-    synthesisPart2: "",
+    synthesisStatements: [""] as string[],
     causality: "",
     costOfResistance: "",
     benefitOfAcceptance: "",
@@ -65,8 +64,7 @@ export function Wizard({ onExit }: { onExit: () => void }) {
       halfSmile: false,
       locationOfNo: false,
       breath: false,
-      synthesisPart1: "",
-      synthesisPart2: "",
+      synthesisStatements: [""],
       causality: "",
       costOfResistance: "",
       benefitOfAcceptance: "",
@@ -76,7 +74,7 @@ export function Wizard({ onExit }: { onExit: () => void }) {
 
   if (completed) {
     return (
-      <CompletionScreen onRestart={handleRestart} onExit={onExit} />
+      <CompletionScreen data={data} onRestart={handleRestart} onExit={onExit} />
     )
   }
 

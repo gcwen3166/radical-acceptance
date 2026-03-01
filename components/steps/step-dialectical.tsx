@@ -1,12 +1,11 @@
 "use client"
 
 import { useI18n } from "@/lib/i18n"
-import { Merge } from "lucide-react"
+import { Merge, Plus, X } from "lucide-react"
 
 interface StepDialecticalProps {
   data: {
-    synthesisPart1: string
-    synthesisPart2: string
+    synthesisStatements: string[]
     causality: string
   }
   updateData: (updates: Partial<StepDialecticalProps["data"]>) => void
@@ -14,6 +13,22 @@ interface StepDialecticalProps {
 
 export function StepDialectical({ data, updateData }: StepDialecticalProps) {
   const { t } = useI18n()
+
+  const handleStatementChange = (index: number, value: string) => {
+    const updated = [...data.synthesisStatements]
+    updated[index] = value
+    updateData({ synthesisStatements: updated })
+  }
+
+  const addStatement = () => {
+    updateData({ synthesisStatements: [...data.synthesisStatements, ""] })
+  }
+
+  const removeStatement = (index: number) => {
+    if (data.synthesisStatements.length <= 1) return
+    const updated = data.synthesisStatements.filter((_, i) => i !== index)
+    updateData({ synthesisStatements: updated })
+  }
 
   return (
     <div className="space-y-8">
@@ -31,34 +46,40 @@ export function StepDialectical({ data, updateData }: StepDialecticalProps) {
         </p>
       </div>
 
-      <div className="space-y-2">
+      <div className="space-y-3">
         <label className="block text-sm font-sans font-medium text-foreground uppercase tracking-wider">
           {t.step4SynthesisLabel}
         </label>
-        <div className="space-y-0">
-          <textarea
-            value={data.synthesisPart1}
-            onChange={(e) => updateData({ synthesisPart1: e.target.value })}
-            placeholder={t.step4SynthesisPlaceholder1}
-            rows={3}
-            className="w-full bg-card text-card-foreground border border-border rounded-t-lg rounded-b-none px-4 py-3 font-sans text-base leading-relaxed placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent resize-none transition-shadow"
-            aria-label={t.step4SynthesisPlaceholder1}
-          />
-
-          {/* AND bridge */}
-          <div className="flex items-center justify-center bg-accent text-accent-foreground py-2 font-serif text-lg font-semibold tracking-widest">
-            {t.step4And}
-          </div>
-
-          <textarea
-            value={data.synthesisPart2}
-            onChange={(e) => updateData({ synthesisPart2: e.target.value })}
-            placeholder={t.step4SynthesisPlaceholder2}
-            rows={3}
-            className="w-full bg-card text-card-foreground border border-border rounded-b-lg rounded-t-none px-4 py-3 font-sans text-base leading-relaxed placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent resize-none transition-shadow"
-            aria-label={t.step4SynthesisPlaceholder2}
-          />
+        <div className="space-y-3">
+          {data.synthesisStatements.map((statement, index) => (
+            <div key={index} className="flex items-start gap-2">
+              <textarea
+                value={statement}
+                onChange={(e) => handleStatementChange(index, e.target.value)}
+                placeholder={t.step4SynthesisPlaceholder}
+                rows={2}
+                className="flex-1 bg-card text-card-foreground border border-border rounded-lg px-4 py-3 font-sans text-base leading-relaxed placeholder:text-muted-foreground/60 focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent resize-none transition-shadow"
+                aria-label={`${t.step4SynthesisLabel} ${index + 1}`}
+              />
+              {data.synthesisStatements.length > 1 && (
+                <button
+                  onClick={() => removeStatement(index)}
+                  className="mt-3 flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors"
+                  aria-label={`Remove statement ${index + 1}`}
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              )}
+            </div>
+          ))}
         </div>
+        <button
+          onClick={addStatement}
+          className="flex items-center gap-1.5 text-sm font-sans font-medium text-accent hover:text-accent/80 transition-colors px-1 py-1"
+        >
+          <Plus className="w-4 h-4" />
+          {t.step4AddAnother}
+        </button>
       </div>
 
       <div className="space-y-2">
