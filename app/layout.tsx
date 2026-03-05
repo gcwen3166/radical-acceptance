@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Radical Acceptance',
-  description: 'Learning to live a life that is not the life you want. A guided DBT skill practice tool.',
+  description: 'Skills for finding peace when reality is not what you want it to be. A guided DBT skill practice tool.',
   icons: {
     icon: [
       {

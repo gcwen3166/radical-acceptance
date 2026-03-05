@@ -7,7 +7,7 @@ export type Language = "en" | "es" | "zh"
 const translations = {
   en: {
     title: "Radical Acceptance",
-    subtitle: "Learning to live a life that is not the life you want.",
+    subtitle: "Skills for finding peace when reality is not what you want it to be.",
     cta: "Let's Practice Acceptance",
     faqTitle: "Frequently Asked Questions",
     faq: [
