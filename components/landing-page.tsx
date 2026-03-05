@@ -30,10 +30,7 @@ export function LandingPage({ onStart }: { onStart: () => void }) {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="flex items-center justify-between px-6 py-4 md:px-12">
-        <div className="text-sm font-sans tracking-widest uppercase text-muted-foreground">
-          RA
-        </div>
+      <header className="flex items-center justify-end px-6 py-4 md:px-12">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1 border border-border rounded-lg px-3 py-1.5 bg-card text-card-foreground">
             {(["en", "es", "zh"] as Language[]).map((l) => (
@@ -53,7 +50,7 @@ export function LandingPage({ onStart }: { onStart: () => void }) {
           </div>
           <div className="flex items-center gap-2">
             <a
-              href="https://www.buymeacoffee.com"
+              href="https://buymeacoffee.com/tls123_ancientdream"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 border border-border rounded-lg px-3 py-1.5 bg-card text-card-foreground text-sm font-sans hover:bg-secondary transition-colors"
